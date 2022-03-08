@@ -1,0 +1,303 @@
+.Menu_One, .Menu_Two, .Menu_Three, .Menu_Four, .Container, .Footer_One, .Footer_Two, .Footer_Three {
+    min-width: 425px;
+}
+@media  screen and (min-width:992px) {
+    .Menu_One, .Menu_Three {
+         background-color: rgb(214, 212, 212);
+         min-width: 992px;
+    }
+    .Menu_Two {
+        background-color: black;
+        min-width: 992px;
+    }
+
+    /* 1 */
+    .one, .four, .eight {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .two {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        /* justify-content: space-evenly; */
+    }
+
+    .three {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        /* justify-content: space-evenly; */
+    }
+
+    .two > span, .three > span {
+        padding: 0.5rem;
+        font-weight: bold;
+    }
+
+    /* 2 */
+    .five {
+        padding: 0.5rem;
+    }
+    .six {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .six > img {
+        width: 30px;
+        height: 30px;
+        margin: 0 1rem 0 2rem;
+    }
+    .six >  span {
+        color: white;
+    }
+
+    /* 3 */
+    .seven {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .seven > span {
+        padding: 0.5rem;
+    }
+
+    /* 4 */   
+    .eight > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem;
+    }
+    .eight > div > img {
+        width: 50px;
+        height: 50px;
+    }
+    .eight > div > span {
+        padding: 1rem;
+    }
+
+    /* 5 */  
+    .Container {
+        width: 70%;
+        margin: auto;
+    }
+
+    /* 6 */
+    .pc, .at, .gh{
+        background-color: rgba(0, 0, 0, 0.308) !important;
+        font-style: italic;
+        font-family:serif;
+    }
+
+    .twelve, .thirteen, .fourteen {
+        width: 70%;
+        margin: auto;
+    }
+   
+}
+
+@media  screen and (max-width: 992px) {
+    .Menu_One, .Menu_Three {
+        background-color: rgb(214, 212, 212);
+        
+   }
+   .Menu_Two {
+       background-color: black;   
+   }
+
+   /* 1 */
+   .one {
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+   }
+   .two {
+       width: 60%;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+   }
+   .three {
+       width: 40%;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+   }
+   .two > span, .three > span {
+       font-weight: bold;
+       padding: 0.5rem 1rem;
+   }
+
+   /* 2 */
+   .four {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+   }
+    .five {
+        width: 30%;
+        padding: 0.5rem 0;
+    }
+    .six {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .six > img {
+        width: 30px;
+        height: 30px;
+        margin: 0 1rem 0 2rem;
+    }
+    .six >  span {
+        color: white;
+    }
+
+     /* 3 */
+    .seven {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+    .seven > span {
+        padding: 0.5rem 1rem;
+    }
+
+     /* 4 */ 
+     .eight {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+     }
+     .eight > div {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    .eight > div > img {
+        width: 40px;
+        height: 40px;
+    }
+    .eight > div > span {
+        display: none;
+    }
+
+
+    /* 5 */  
+    .Container {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* 6 */
+    .pc, .at, .gh{
+        background-color: rgba(0, 0, 0, 0.308) !important;
+        font-style: italic;
+        font-family:serif;
+    }
+
+    
+}
+
+@media  screen and (max-width: 768px) {
+    .one {
+        display: flex;
+        flex-direction: column;
+    }
+    .two {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .three {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .two > span, .three > span {
+        font-weight: bold;
+    }
+
+    /* 2 */
+    .five {
+        display: none;
+    }
+    .six {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+    }
+
+     /* 3 */
+     .seven {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+     /* 4 */ 
+    .eight > div > img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .AA{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mainimg {
+        width: 50%;
+    }
+}
+
+
+.thirteen > div > div >h6 {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.472);
+}
+ul > li > a, .lienhe {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.472);
+}
+ul > li > a:hover {
+    margin: 0.5rem;
+    color: #13C8C3;
+}
+
+.btn4:focus + .drop4{
+    display: none;
+}
+.btn5:focus + .drop5 {
+    display: none;
+}
+.drop4 {
+    display: block;
+}
+.drop5 {
+    display: block;
+}
